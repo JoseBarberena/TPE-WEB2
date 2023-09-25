@@ -4,8 +4,7 @@ Trabajo Práctico Especial WEB 2
 Integrantes: José I Barberena, Totino Noelia Micaela.
 
 
-E-mails: jibbarberena@gmail.com          
-         noee.totino@gmail.com 
+E-mails: jibbarberena@gmail.com        noee.totino@gmail.com 
 
 
 Temática: Relaciones comerciales – Operaciones comerciales.
