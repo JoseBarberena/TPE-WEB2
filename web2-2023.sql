@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-10-2023 a las 00:14:33
+-- Tiempo de generación: 18-10-2023 a las 02:48:39
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -84,7 +84,19 @@ CREATE TABLE `ventas` (
 --
 
 INSERT INTO `ventas` (`id`, `Cliente`, `Factura`, `Fecha`, `id_vendedor`, `Producto`, `Cantidad`, `P_Unitario`, `Total`) VALUES
-(21, 'ee', 'sdfsdfsd', '2023-10-18', 1, '333', 4, 4, 4);
+(22, 'Maitia R', 'A000535', '2023-10-24', 1, 'SUPLEMENTO', 4, 10, 10),
+(23, 'MSGP', 'A000050036', '2023-06-05', 1, 'Calcio bloque', 9, 100, 9),
+(24, 'MSGP', 'A00-005326', '0000-00-00', 2, 'BLOQUE CALCIO', 9, 3, 27),
+(25, 'CONSUMIDOR FINAL', 'A00-005327', '2023-05-10', 1, 'BLOQUE MAGNESIO', 3, 15, 3),
+(26, 'CEPEDA HORARIO', 'A00-005333', '2023-04-25', 2, 'BLOQUE CALCIO', 20, 3, 60),
+(27, 'MSGP', 'A00-005326', '0000-00-00', 2, 'BLOQUE MAGNESIO', 1, 15, 15),
+(28, 'CERRO CHATO', 'A00-005333', '2023-05-23', 1, '17/15', 10, 500, 5000),
+(29, 'FERREIRO CLAUDIO', 'A00-005338', '2023-06-26', 2, 'POSTE QUEBRACHO', 9, 100, 900),
+(30, 'SANCHEZ OFELIA', 'A00-005345', '2023-06-25', 1, 'CLAVOS TECHO', 100, 3, 300),
+(31, 'MSGP', 'A00-005326', '0000-00-00', 2, 'BLOQUE CALCIO', 9, 3, 27),
+(32, 'MSGP', 'A00-005326', '0000-00-00', 2, 'BLOQUE CALCIO', 9, 3, 27),
+(33, 'MSGP', 'A00-005326', '0000-00-00', 2, 'BLOQUE CALCIO', 9, 3, 27),
+(34, 'MSGP', 'A00-005326', '0000-00-00', 2, 'BLOQUE CALCIO', 9, 3, 27);
 
 --
 -- Índices para tablas volcadas
@@ -123,7 +135,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `ventas`
 --
 ALTER TABLE `ventas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- Restricciones para tablas volcadas
