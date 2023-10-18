@@ -33,7 +33,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `email`, `password`) VALUES
-(1, 'webadmin@gmail.com', '$2y$10$VxWRxpQwkc8t6X7YHljO..RlviqYI42dF6OEW1LNHyMtn1jafaspW');
+(1, 'webadmin@gmail.com', '$2y$10\$VxWRxpQwkc8t6X7YHljO..RlviqYI42dF6OEW1LNHyMtn1jafaspW');
 
 -- --------------------------------------------------------
 
