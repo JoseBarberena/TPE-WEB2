@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-09-2023 a las 01:20:08
+-- Tiempo de generación: 18-10-2023 a las 00:14:33
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -20,6 +20,25 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `web2-2023`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id` int(11) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(250) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `email`, `password`) VALUES
+(1, 'webadmin@gmail.com', '$2y$10$VxWRxpQwkc8t6X7YHljO..RlviqYI42dF6OEW1LNHyMtn1jafaspW');
 
 -- --------------------------------------------------------
 
@@ -65,11 +84,17 @@ CREATE TABLE `ventas` (
 --
 
 INSERT INTO `ventas` (`id`, `Cliente`, `Factura`, `Fecha`, `id_vendedor`, `Producto`, `Cantidad`, `P_Unitario`, `Total`) VALUES
-(1, 'MSGP', 'A-12345', '2023-09-01', 1, 'talco', 1, 5, 5);
+(21, 'ee', 'sdfsdfsd', '2023-10-18', 1, '333', 4, 4, 4);
 
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `vendedores`
@@ -89,10 +114,16 @@ ALTER TABLE `ventas`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT de la tabla `ventas`
 --
 ALTER TABLE `ventas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- Restricciones para tablas volcadas
