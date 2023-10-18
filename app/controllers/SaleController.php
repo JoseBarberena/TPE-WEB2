@@ -96,6 +96,7 @@ function deleteSale($id){
 
     $this->authHelper->checkLoggedIn();  
     $this->model->deleteSaleFromDB($id); 
+    $this->authHelper->checkLoggedIn(); 
     $this->view->showHomeLocation();
 
 }

@@ -1,14 +1,14 @@
 <?php
-
-class UserModel
+require_once 'app/models/Model.php';
+class UserModel extends model
 {
 
-    private $db;
+    // private $db;
 
-    function __construct()
-    {
-        $this->db = new PDO('mysql:host=localhost;dbname=web2-2023;charset=utf8', 'root', '');
-    }
+    // function __construct()
+    // {
+    //     $this->db = new PDO('mysql:host=localhost;dbname=web2-2023;charset=utf8', 'root', '');
+    // }
 
     function getUser($email)
     {

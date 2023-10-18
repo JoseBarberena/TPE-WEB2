@@ -1,14 +1,17 @@
 <?php
+//require_once('model.php');
+//require_once "app/models/Model.php";
+require_once 'app/models/Model.php';
 
-class VentasModel{
+class VentasModel extends model {
 
-    private $db;
+    //protected $db;
 
-    function __construct(){
+    //function __construct(){
+        //$this->db = new PDO ('mysql:host='.MYSQL_HOST.';dbname='.MYSQL_DB.';charset=utf8',MYSQL_USER, MYSQL_PASS);
+       // $this->db = new PDO('mysql:host=localhost;dbname=web2-2023;charset=utf8', 'root', '');
 
-        $this->db = new PDO('mysql:host=localhost;dbname=web2-2023;charset=utf8', 'root', '');
-
-    }
+    //}
 
     function getSales(){
 
